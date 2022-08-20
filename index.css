@@ -1,5 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    line-height: 1.5;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #C6C6C6;
+    padding: 1rem 2rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+}
+
+.logo {
+    width: 200px;
+}
+
+
+
+.avatar {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    width: 100px;
+}
+
+.avatar-section {
+    width: 100%;
+    padding: 3rem 1.5rem;
+    height: 4rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+.avatar-section img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    width: 70px;
+}
+
+h2,p {
+    margin: 0;
+}
+
+h2 {
+    margin-top: 0.5rem;
+}
+
+
+
+
+.img-section img {
+    width: 100%;
+    max-height: 35%;
+}
+
+
+.icons img {
+    width: 35px;
+    margin: 10px;
+}
+
+footer {
+    padding: 2rem 1.5rem;
+}
+
+.icons img:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+#comment span, #likes {
+    font-weight: 900;
+}
+
+#likes {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 

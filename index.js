@@ -28,3 +28,33 @@ const posts = [
     }
 ]
 
+
+// variables declaration
+
+const sectionOne = document.querySelector(".avatar-section")
+const sectionTwo = document.querySelector(".img-section")
+
+// Making the site to render different posts
+function getRandomPost () {
+    let post = Math.floor(Math.random() * posts.length)
+    let  newPost = posts[post]
+    return newPost
+}
+
+const random = getRandomPost();
+
+function newRandomPost () {
+        sectionOne.innerHTML = `<section class="avatar-section">
+        <div>
+        <img alt="${random.name}" id="ava" src="${random.avatar}">
+    </div>
+        <div>
+        <h2>${random.name}</h2>
+        <p>${random.location}</p>
+    </div>
+        `
+
+        sectionTwo.innerHTML = `<img alt="main img" src="${random.post}">`
+}
+
+newRandomPost( )
