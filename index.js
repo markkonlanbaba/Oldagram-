@@ -61,7 +61,7 @@ function newRandomPost () {
 
 let count = 0;
 
-document.getElementById("main-img").addEventListener("dblclick", function() {
+document.getElementById("main-post").addEventListener("dblclick", function() {
     count ++
     document.querySelector("#likes").innerHTML = `${count} likes`
 
