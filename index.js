@@ -54,7 +54,20 @@ function newRandomPost () {
     </div>
         `
 
-        sectionTwo.innerHTML = `<img alt="main img" src="${random.post}">`
+        sectionTwo.innerHTML = `<img alt="main img" id="main-img" src="${random.post}">`
 }
+
+let count = 0;
+
+document.getElementById("like-btn").addEventListener("dblclick", function(){
+    count += 1
+    document.querySelector("#likes").innerHTML = `${count} likes`
+
+})
+document.getElementById("main-img").addEventListener("dblclick", function(){
+    count += 1
+    document.querySelector("#likes").innerHTML = `${count} likes`
+
+})
 
 newRandomPost( )
