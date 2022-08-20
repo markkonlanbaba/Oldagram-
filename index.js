@@ -55,19 +55,24 @@ function newRandomPost () {
         `
 
         sectionTwo.innerHTML = `<img alt="main img" id="main-img" src="${random.post}">`
+
+        document.getElementById("comment").innerHTML = `<span>${random.username}</span> ${random.comment}`
 }
 
 let count = 0;
 
-document.getElementById("like-btn").addEventListener("dblclick", function(){
-    count += 1
+document.getElementById("main-img").addEventListener("dblclick", function() {
+    count ++
     document.querySelector("#likes").innerHTML = `${count} likes`
 
 })
-document.getElementById("main-img").addEventListener("dblclick", function(){
-    count += 1
+
+document.getElementById("like-btn").addEventListener("click", function(){
+    count ++
     document.querySelector("#likes").innerHTML = `${count} likes`
 
 })
+
+
 
 newRandomPost( )
